@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -16,9 +16,9 @@ html * {
 
 body {
   font-size: 100%;
-  font-family: "Lato", sans-serif;
+/*  font-family: "Lato", sans-serif;
   color: #8f9cb5;
-  background-color: #ffd88f;
+  background-color: #ffd88f;*/
 }
 
 a {
@@ -26,7 +26,7 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -40,9 +40,9 @@ Modules - reusable parts of our design
   white-space: nowrap;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 header {
@@ -79,9 +79,9 @@ header h1 {
   }
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-xpopup 
+xpopup
 
 -------------------------------- */
 .cd-popup {
@@ -177,7 +177,7 @@ xpopup
   top: 12px;
   width: 14px;
   height: 3px;
-  background-color: #8f9cb5;
+  /*background-color: #8f9cb5;*/
 }
 .cd-popup-container .cd-popup-close::before {
   -webkit-transform: rotate(45deg);
