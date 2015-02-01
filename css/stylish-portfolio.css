@@ -42,6 +42,10 @@ body {
   font-weight: 700;
 }
 
+.countDownButtons {
+  margin-top: 50%;
+}
+
 .portfolio-item h1 {
     text-align:center;
     position:absolute;
