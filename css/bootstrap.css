@@ -934,6 +934,7 @@ img {
 .thumbnail a > img,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
+  font-size:small;
   display: block;
   width: 100% \9;
   max-width: 100%;
