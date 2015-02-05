@@ -45,7 +45,8 @@ body {
 }
 
 .countDownButtons {
-  margin-top: 33%;
+  position: relative;
+  margin-top: 35%;
 }
 
 .portfolio-item h1 {
