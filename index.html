@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="COAL Community Oriented Applied Learning">
-  <meta name="author" content="Joomin Cai Yeo">
+  <meta name="author" content="Joo Min (Cai) Yeo">
 
   <title>COAL | California</title>
 
@@ -69,6 +69,9 @@
       <li>
         <a href="#map">Chapter Locations</a>
       </li>
+      <li>
+        <a href="#login">Log In</a>
+      </li>
     </ul>
   </nav>
 
@@ -77,7 +80,7 @@
   <div class="text-vertical-center-kindleC">
 <!--<h1><font color="#FFFFFF">The COAL Kindle Conference</font></h1>
     <h3><font color="#FFFFFF">Empowering Students to Apply Classroom Knowledge to the Real World</font></h3>-->
-    
+
 <div class="countDownButtons">
     <a href="http://goo.gl/forms/ggQ9fkVzso" target="_blank" class="btn btn-dark btn-lg"><font color="#000000">Become a Speaker</font></a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -338,6 +341,70 @@
     <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
   </small>
 </iframe>
+</section>
+
+<!-- Log In -->
+<section id="login" class="login">
+<script type = "text/javascript">
+
+// Note: Like all Javascript password scripts, this is hopelessly insecure as the user can see
+//the valid usernames/passwords and the redirect url simply with View Source.
+// And the user can obtain another three tries simply by refreshing the page.
+//So do not use for anything serious!
+
+var count = 4;
+function validate() {
+var un = document.myform.username.value;
+var pw = document.myform.pword.value;
+var valid = false;
+
+var unArray = ["cyeo", "bghaly", "cyoo"];  // as many as you like - no comma after final entry
+var pwArray = ["1234", "2345", "3456"];  // the corresponding passwords;
+
+for (var i=0; i <unArray.length; i++) {
+if ((un == unArray[i]) && (pw == pwArray[i])) {
+valid = true;
+break;
+}
+}
+
+if (valid) {
+alert ("Login was successful");
+window.location = "http://www.google.com";
+return false;
+}
+
+var t = " tries";
+if (count == 1) {t = " try"}
+
+if (count >= 1) {
+alert ("Invalid username and/or password.  You have " + count + t + " left.");
+document.myform.username.value = "";
+document.myform.pword.value = "";
+setTimeout("document.myform.username.focus()", 25);
+setTimeout("document.myform.username.select()", 25);
+count --;
+}
+
+else {
+alert ("Still incorrect! You have no more tries left!");
+document.myform.username.value = "No more tries allowed!";
+document.myform.pword.value = "";
+document.myform.username.disabled = true;
+document.myform.pword.disabled = true;
+return false;
+}
+
+}
+
+</script>
+
+<form name = "myform">
+<p>ENTER USER NAME <input type="text" name="username"> ENTER PASSWORD <input type="password" name="pword">
+<input type="button" value="Check In" name="Submit" onclick= "validate()">
+</p>
+
+</form>
 </section>
 
 <!-- Footer -->
