@@ -22,7 +22,7 @@ break;
 
 if (valid) {
 alert ("Login was successful");
-window.location "http://www.google.com";
+window.location = "http://www.google.com";
 return false;
 }
 
@@ -30,7 +30,7 @@ var t = " tries";
 if (count == 1) {t = " try"}
 
 if (count >= 1) {
-alert ("Invalid username and/or password.  You have " + count + t + " left.");
+alert ("Invalid username and/or password.");
 document.myform.username.value = "";
 document.myform.pword.value = "";
 setTimeout("document.myform.username.focus()", 25);
@@ -39,8 +39,8 @@ count --;
 }
 
 else {
-alert ("Still incorrect! You have no more tries left!");
-document.myform.username.value = "No more tries allowed!";
+alert ("Please wait 5 minutes before trying again.");
+document.myform.username.value = "Blocked!";
 document.myform.pword.value = "";
 document.myform.username.disabled = true;
 document.myform.pword.disabled = true;
