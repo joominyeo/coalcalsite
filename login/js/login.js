@@ -12,7 +12,7 @@ var pw = document.myform.pword.value;
 var valid = false;
 
 var unArray = ["root", "bghaly", "cyoo", "MCh", "test"];  // as many as you like - no comma after final entry
-var pwArray = ["cyeo", "3408", "7907", "1054", "1234"];  // the corresponding passwords;
+var pwArray = ["cyeo", "1783COAL", "7907", "1054", "1234"];  // the corresponding passwords;
 
 for (i=0; i <unArray.length; i++) {
 if ((un == unArray[i]) && (pw == pwArray[i])) {
