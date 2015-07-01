@@ -5,6 +5,7 @@
 //So do not use for anything serious!
 
 var count = 4;
+var i =0
 function validate() {
 var un = document.myform.username.value;
 var pw = document.myform.pword.value;
@@ -13,7 +14,7 @@ var valid = false;
 var unArray = ["cyeo", "George", "Sarah", "Michael"];  // as many as you like - no comma after final entry
 var pwArray = ["howareyou", "Password2", "Password3", "Password4"];  // the corresponding passwords;
 
-for (var i=0; i <unArray.length; i++) {
+for (i=0; i <unArray.length; i++) {
 if ((un == unArray[i]) && (pw == pwArray[i])) {
 valid = true;
 break;
