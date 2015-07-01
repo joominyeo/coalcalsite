@@ -12,7 +12,7 @@ var pw = document.myform.pword.value;
 var valid = false;
 
 var unArray = ["cyeo", "bghaly", "cyoo", "MCh"];  // as many as you like - no comma after final entry
-var pwArray = ["1", "2", "3", "4"];  // the corresponding passwords;
+var pwArray = ["3478", "3408", "7907", "1054"];  // the corresponding passwords;
 
 for (i=0; i <unArray.length; i++) {
 if ((un == unArray[i]) && (pw == pwArray[i])) {
@@ -24,15 +24,15 @@ break;
 if (valid) {
   if(i==0)
   {
-    window.location = "http://www.google.com";
+    window.location = "schoolSites/troy.html";
   }
   if(i==1)
   {
-    window.location = "http://www.yahoo.com";
+    window.location = "schoolSites/SunnyHills.html";
   }
   if(i!=0 || i!=1)
   {
-    window.loaction = "http://www.cnn.com";
+    window.loaction = "schoolSites/Sonora.html";
   }
 return false;
 }
