@@ -11,8 +11,8 @@ var un = document.myform.username.value;
 var pw = document.myform.pword.value;
 var valid = false;
 
-var unArray = ["cyeo", "George", "Sarah", "Michael"];  // as many as you like - no comma after final entry
-var pwArray = ["howareyou", "Password2", "Password3", "Password4"];  // the corresponding passwords;
+var unArray = ["cyeo", "bghaly", "cyoo", "MCh"];  // as many as you like - no comma after final entry
+var pwArray = ["1", "2", "3", "4"];  // the corresponding passwords;
 
 for (i=0; i <unArray.length; i++) {
 if ((un == unArray[i]) && (pw == pwArray[i])) {
@@ -22,8 +22,18 @@ break;
 }
 
 if (valid) {
-alert ("Login was successful");
-window.location = "http://www.google.com";
+  if(i==0)
+  {
+    window.location = "http://www.google.com";
+  }
+  if(i==1)
+  {
+    window.location = "http://www.yahoo.com";
+  }
+  if(i!=0 || i!=1)
+  {
+    window.loaction = "http://www.cnn.com";
+  }
 return false;
 }
 
