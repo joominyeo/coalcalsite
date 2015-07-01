@@ -1,4 +1,7 @@
 
+<html>
+<script type = "text/javascript">
+
 // Note: Like all Javascript password scripts, this is hopelessly insecure as the user can see
 //the valid usernames/passwords and the redirect url simply with View Source.
 // And the user can obtain another three tries simply by refreshing the page.
@@ -10,8 +13,8 @@ var un = document.myform.username.value;
 var pw = document.myform.pword.value;
 var valid = false;
 
-var unArray = ["cyeo", "George", "Sarah", "Michael"];  // as many as you like - no comma after final entry
-var pwArray = ["howareyou", "Password2", "Password3", "Password4"];  // the corresponding passwords;
+var unArray = ["Philip", "George", "Sarah", "Michael"];  // as many as you like - no comma after final entry
+var pwArray = ["Password1", "Password2", "Password3", "Password4"];  // the corresponding passwords;
 
 for (var i=0; i <unArray.length; i++) {
 if ((un == unArray[i]) && (pw == pwArray[i])) {
@@ -22,7 +25,7 @@ break;
 
 if (valid) {
 alert ("Login was successful");
-window.location "http://www.google.com";
+window.location = "http://www.google.com";
 return false;
 }
 
@@ -48,3 +51,13 @@ return false;
 }
 
 }
+
+</script>
+
+<form name = "myform">
+<p>ENTER USER NAME <input type="text" name="username"> ENTER PASSWORD <input type="password" name="pword">
+<input type="button" value="Check In" name="Submit" onclick= "validate()">
+</p>
+
+</form>
+</html>
