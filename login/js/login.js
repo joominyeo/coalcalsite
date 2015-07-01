@@ -24,7 +24,7 @@ break;
 if (valid) {
   if(i==0)
   {
-    window.location = "schoolSites/troy.html";
+    window.location = "schoolSites/Troy.html";
   }
   if(i==1)
   {
